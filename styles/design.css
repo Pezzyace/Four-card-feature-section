@@ -1,0 +1,128 @@
+p{
+  font-family: 'Poppins', sans-serif;;
+  margin: 0;
+}
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.page{
+  background-color: hsl(0, 0%, 98%);
+  margin: 60px 130px 20px 130px;
+  padding: 5px 0px 30px 0px;
+  box-shadow: 0px 7px 7px 5px rgba(0, 0, 0, 0.05);
+  width: 1000px;
+}
+.top-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0px 0px 0px;
+}
+.heading-1{
+  font-size: 20px;
+  margin-bottom: 7px;
+  color: hsl(234, 12%, 34%);
+  font-weight: 200;
+}
+.heading-2{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: hsl(234, 12%, 34%);
+}
+.heading-3{
+  width: 400px;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+}
+.bottom-page{
+  margin: 0px 150px 0px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.supervisor-tab, .team-builder-tab, .karma-tab , .calculator-tab{
+  border-radius: 2px;
+  border-top-style: solid;
+  margin: 0px 20px 20px 20px;
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  width: 200px;
+  height: 130px;
+  box-shadow: 0px 7px 7px 5px rgba(0, 0, 0, 0.05);
+}
+.supervisor, .team, .karma, .calc{
+  color: black;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.text{
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 20px;
+  font-size: 11px;
+  width: 200px;
+}
+
+.supervisor-tab{
+  border-top-color: hsl(180, 62%, 55%);
+}
+.team-builder-tab{
+  border-top-color: hsl(0, 78%, 62%);
+}
+.calculator-tab{
+  border-top-color: hsl(212, 86%, 64%);
+}
+.karma-tab{
+  border-top-color: hsl(34, 97%, 64%);
+}
+.img{
+  display: flex;
+  justify-content: end;
+}
+.icons{
+  height: 35px;
+  margin-top: 10px;
+}
+
+@media (max-width: 375px){
+  .bottom-page{
+    flex-direction: column;
+    width: 375px;
+    margin: 0;
+  }
+  .page{
+    margin: 0;
+    width: 375px;
+  }
+  .top-page{
+    width: 375px;
+  }
+  .heading-3{
+    width: 270px;
+  }
+  .supervisor-tab, 
+  .team-builder-tab, 
+  .karma-tab , 
+  .calculator-tab{
+    width: 250px;
+    height: 160px;
+  }
+  .text{
+    width: 260px;
+    font-size: 15px;
+  }
+  footer{
+    margin-bottom: 30px;
+  }
+}
